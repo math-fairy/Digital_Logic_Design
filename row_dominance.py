@@ -163,7 +163,4 @@ def solution(minterm):
     return answer
 
 
-
-print(solution([4,4,10,11,13,15]))
-
 #EOF
