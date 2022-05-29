@@ -165,11 +165,7 @@ def solution(minterm):
                 answer.append(done[0])
 
 
-    return answer      
-
-    
-
-print(solution([4,6,0,3,7,10,11,13]))
+    return answer     
 
 
-###EOF
+#EOF
