@@ -145,6 +145,8 @@ def solution(minterm):
     col_checklist2 = [] #PI만 저장해둔 곳
     for x in range(len(col_checklist)):
         col_checklist2.append(col_checklist[x][1:])
+        
+        
     dominant = []
     for x in range(len(col_checklist2)):
         for y in range(x+1,len(col_checklist2)):
@@ -152,11 +154,11 @@ def solution(minterm):
             list2 = col_checklist2[y]
             intersection = list(set(list1) & set(list2))
             if intersection == list1 and list1 != list2:
-                if list1 not in dominant:
-                    dominant.append(list1)
-            elif intersection == list2 and list1 != list2:
                 if list2 not in dominant:
                     dominant.append(list2)
+            elif intersection == list2 and list1 != list2:
+                if list1 not in dominant:
+                    dominant.append(list1)
     
     for x in range(len(col_checklist)):
         if col_checklist2[x] in dominant:
