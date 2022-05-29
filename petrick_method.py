@@ -163,7 +163,5 @@ def solution(minterm):
     answer = muls       
     return answer
 
-print(solution([4,7,3,6,7,9,11,12,14,15]))
-
 
 # EOF
